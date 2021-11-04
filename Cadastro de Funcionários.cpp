@@ -74,6 +74,9 @@ int main(){
 					cout << "Código do Setor: " << lista_de_funcionarios[i].setor << endl;
 					cout << " " << endl;
 				}
+				if(quantidade_funcionarios == 0){
+					cout << "Nenhum funcionário cadastrado ainda." << endl << endl;
+				}
 			break;
 		
 			case 3:
@@ -105,9 +108,17 @@ int main(){
 				if(cont_setor == 0){
 					cout << "Nenhum funcionário registrado neste setor da empresa ou setor inexistente." << endl;
 					cout << "Por favor, tente novamente." << endl;
-  	  	  	   }	
+  	  	  	   }
+  	   	   break;
+  	      
+    	   case 5:
+   				cout << "Programa Encerrado com Sucesso!" << endl << endl;
+   	   	   break;
+  	      
+  	      default: {
+				cout << "Opção indisponível. Por favor, tente novamente." << endl << endl;
+			}		 	
 		}
 	}while(op != 5);
-	cout << "Programa Encerrado com Sucesso!" << endl;
 return 0;		
 }
